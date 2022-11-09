@@ -19,10 +19,13 @@ For TAP files all header are like this below.
   
    * 00 --> Standard header
 
-* FF --> Data code block
+* FF --> Data code block. 
+         
+         Example: HEADER (see below) | Data block lenght + 2 bytes | 0xFF | data block | checksum XOR
 
 
-1. Machine code files header
+
+#### A. Machine code files header
 This header is 19 bytes [2 to 20]
 
   |  offset | Lenght | descripcion   | Aditional information |
@@ -55,12 +58,17 @@ This header is 19 bytes [2 to 20]
 
 
 
-2. Screen files header
+#### B. Screen files header
 
+This case is similar to the previous case (machine code header) but:
 
+* Data lenght always is, 6912 bytes
+* Starting address is, 16384 (video RAM)
+
+Then, for example, 1300 00 03 xxxx .. xx 001B 0040 0080 xx
 
 A TAP file is composed for a header and data block, with checksum on each case.
 
 ### How this application works?
 
-### Machine code files for zxcmtap
+### Machine code files for zxmctap
