@@ -1,4 +1,4 @@
-# zxcmtap
+# zxmctap
 ZX Spectrum TAP generator from machine code lists
 
 ### What is a TAP file?
