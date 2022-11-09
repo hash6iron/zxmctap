@@ -8,13 +8,17 @@ A TAP file is simply one datablock or a group of 2 or more datablocks, one follo
 
 A four possible types of TAP file we can found. For BASIC program, for Numeric and Alphanumeric array and, code or screen blocks. This utility not included support for BASIC program type file is focused only in a machine code or screen files.
 
+For TAP files all header are like this below.
+
+  | Data lenght  (2 bytes) | Flag type (1 byte)  |
+  |------------------------|---------------------|
+
 1. Machine code files header
-This header is 21 bytes [0 to 20]
+This header is 19 bytes [0 to 20]
 
   |  offset | Lenght | descripcion   | Aditional information |
   |---------|--------|---------------|-----------------------|
-  |    0    |    1   | Always 0x13   | About 19 bytes for header              |
-  |    1    |    1   | Always 0x00   |                                        |
+  |    0    |    2   | Always 0x1300 | About 19 bytes for this header type, in little endian    |
   |    2    |    1   | Flag byte     | is 0x00 for a standard rom file        |
   |    3    |    1   | Data type     | For machine code is 0x03               |
   |    4    |   10   | Name of file  | Always are 10 fixes bytes. Null chars are filled with 0x20 |
