@@ -18,7 +18,8 @@ For TAP files all header are like this below.
   Where, flag byte:
   
    00 --> Standard header
-   FF --> Data code block
+
+FF --> Data code block
 
 
 1. Machine code files header
