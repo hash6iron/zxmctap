@@ -15,11 +15,11 @@ For TAP files all header are like this below.
 
   In case below, machine code file is, 1300 00 xxxxxxxxxx .. xx
   
-  Where, flag byte:
+  Where, FLAG byte can be:
   
-   00 --> Standard header
+   * 00 --> Standard header
 
-FF --> Data code block
+* FF --> Data code block
 
 
 1. Machine code files header
