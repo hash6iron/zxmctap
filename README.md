@@ -10,8 +10,8 @@ A four possible types of TAP file we can found. For BASIC program, for Numeric a
 
 For TAP files all header are like this below.
 
-  | Data lenght  (2 bytes) | Flag type (1 byte)  |
-  |------------------------|---------------------|
+  | Data body lenght  (2 bytes) | Flag type (1 byte)  | Data body for this header - n bytes  |
+  |-----------------------------|---------------------|---------------------------------------
 
 1. Machine code files header
 This header is 19 bytes [0 to 20]
