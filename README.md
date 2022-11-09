@@ -35,7 +35,7 @@ This header is 21 bytes [0 to 20]
       |     |    |             Code name
       |     |    Type code
       |     FLAG type
-      Always is 0x1300
+      Always is 0x1300 --> 19 bytes (little endian) 
     
       NOTE: In the example above, data lenght is 2000h --> 8192 bytes (in little endian is 0x0020)
             For start address is 4E20h --> 20000 (in little endian is 0x204E)
