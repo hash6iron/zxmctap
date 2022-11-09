@@ -13,8 +13,11 @@ For TAP files all header are like this below.
   | Data body lenght  (2 bytes) | Flag type (1 byte)  | Data body for this header - n bytes  |
   |-----------------------------|---------------------|---------------------------------------
 
+  In case below, machine code file is, 1300 00 xxxxxxxxxx .. xx
+
+
 1. Machine code files header
-This header is 19 bytes [0 to 20]
+This header is 19 bytes [2 to 20]
 
   |  offset | Lenght | descripcion   | Aditional information |
   |---------|--------|---------------|-----------------------|
