@@ -25,19 +25,20 @@ This header is 21 bytes [0 to 20]
   
   Example:
   
-   1300   00   03   4A45542D504143202020   0020   204E   0080   C9
-  \____/ \__/ \__/ \____________________/ \____/ \____/ \____/ \__/
-    |     |    |             |              |      |      |     |
-    |     |    |             |              |      |      |     Checksum
-    |     |    |             |              |      |      Reserver, 32768 (little endian)
-    |     |    |             |              |      Start address
-    |     |    |             |              Data lenght
-    |     |    |             Code name
-    |     |    Type code
-    |     FLAG type
-    |     |    |             |              |      |      |     |
+     1300   00   03   4A45542D504143202020   0020   204E   0080   C9
+    \____/ \__/ \__/ \____________________/ \____/ \____/ \____/ \__/
+      |     |    |             |              |      |      |     |
+      |     |    |             |              |      |      |     Checksum
+      |     |    |             |              |      |      Reserver, 32768 (little endian)
+      |     |    |             |              |      Start address
+      |     |    |             |              Data lenght
+      |     |    |             Code name
+      |     |    Type code
+      |     FLAG type
+      Always is 0x1300
     
-
+      NOTE: In the example above, data lenght is 2000h --> 8192 bytes (in little endian is 0x0020)
+            For start address is 4E20h --> 20000 (in little endian is 0x204E)
 
 
 
