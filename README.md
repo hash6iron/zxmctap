@@ -45,7 +45,7 @@ This header is 19 bytes [2 to 20]
     \____/ \__/ \__/ \____________________/ \____/ \____/ \____/ \__/
       |     |    |             |              |      |      |     |
       |     |    |             |              |      |      |     Checksum
-      |     |    |             |              |      |      Reserver, 32768 (little endian)
+      |     |    |             |              |      |      Reserved, 32768 (little endian)
       |     |    |             |              |      Start address
       |     |    |             |              Data lenght
       |     |    |             Code name
